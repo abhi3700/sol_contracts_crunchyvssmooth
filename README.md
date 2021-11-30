@@ -3,6 +3,7 @@ Smart contract for voting on either crunchy or smooth peanut butter.
 
 ## About
 * Vote on crunchy vs smooth peanut butter.
+* [Reference](https://www.brianfriel.xyz/learning-how-to-build-on-solana/)
 * [Instruction](./instruction.md)
  
 ## Installation
@@ -35,10 +36,10 @@ $ solana-test-validator
 
 // on terminal-2
 // to new program-id
-$ solana program deploy target/deploy/crunchy_vs_smooth.so
+$ anchor deploy
 
 // upgrade to existing program-id
-$ solana upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
+$ anchor upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
 ```
 
 ### Deploying contracts to Devnet (Public)
@@ -46,11 +47,11 @@ $ solana upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26P
 
 * Deploy the contract to a new program-id
 ```console
-$ solana program deploy target/deploy/crunchy_vs_smooth.so
+$ anchor deploy --provider.cluster devnet
 ```
 * Deploy the contract to a existing program-id
 ```console
-$ solana upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
+$ anchor upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
 ```
 
 ### Deploying contracts to Mainnet
@@ -58,9 +59,9 @@ $ solana upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26P
 
 * Deploy the contract to a new program-id
 ```console
-$ solana program deploy target/deploy/crunchy_vs_smooth.so
+$ anchor deploy --provider.cluster mainnet
 ```
 * Deploy the contract to a existing program-id
 ```console
-$ solana upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
+$ anchor upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
 ```
