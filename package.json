@@ -10,9 +10,9 @@
         "build": "anchor build",
         "deploy:local": "anchor deploy",
         "deploy:dev": "anchor deploy --provider.cluster=devnet",
-        "upgrade:dev": "anchor upgrade target/deploy/anchor_example.so --provider.cluster=devnet --program-id <TODO>",
+        "upgrade:dev": "anchor upgrade target/deploy/anchor_example.so --provider.cluster devnet --program-id <TODO>",
         "deploy:test": "anchor deploy --provider.cluster=testnet",
-        "upgrade:test": "anchor upgrade target/deploy/anchor_example.so --provider.cluster=testnet --program-id <TODO>",
+        "upgrade:test": "anchor upgrade target/deploy/anchor_example.so --provider.cluster testnet --program-id <TODO>",
         "test": "anchor test",
         "test:debug": "debug=true anchor test",
         "test:skip-build": "anchor test --skip-build"

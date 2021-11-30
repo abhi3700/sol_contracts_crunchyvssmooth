@@ -38,7 +38,7 @@ $ solana-test-validator
 $ solana program deploy target/deploy/crunchy_vs_smooth.so
 
 // upgrade to existing program-id
-$ solana program deploy target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
+$ solana upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
 ```
 
 ### Deploying contracts to Devnet (Public)
@@ -50,7 +50,7 @@ $ solana program deploy target/deploy/crunchy_vs_smooth.so
 ```
 * Deploy the contract to a existing program-id
 ```console
-$ solana program deploy target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
+$ solana upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
 ```
 
 ### Deploying contracts to Mainnet
@@ -62,5 +62,5 @@ $ solana program deploy target/deploy/crunchy_vs_smooth.so
 ```
 * Deploy the contract to a existing program-id
 ```console
-$ solana program deploy target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
+$ solana upgrade target/deploy/crunchy_vs_smooth.so --program-id EGzbH5pZmHhm26PBtEYA57WsLUkGA2vqn8vhsREenfNS
 ```
