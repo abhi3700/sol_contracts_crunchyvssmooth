@@ -14,7 +14,7 @@ describe('crunchy-vs-smooth', () => {
   const program = anchor.workspace.CrunchyVsSmooth as Program<CrunchyVsSmooth>;
   const voteAccount = anchor.web3.Keypair.generate();
 
-  beforeEach('Initializes with 0 votes for crunchy and smooth', async () => {
+  it('Initializes with 0 votes for crunchy and smooth', async () => {
       // console.log("Testing Initialize...");
 
     /* The last element passed to RPC methods is always the transaction options. Because voteAccount is being created here, we are required to pass it as a signers array */
@@ -55,7 +55,6 @@ describe('crunchy-vs-smooth', () => {
 
     // console.log("Crunchy: ", account.crunchy.toString());
     // console.log("Smooth: ", account.smooth.toString());
-    // assert that the vote for crunchy == 1
     assert.ok(
       account.crunchy.toString() == 1 && account.smooth.toString() == 0
     );
@@ -76,9 +75,8 @@ describe('crunchy-vs-smooth', () => {
     // console.log("Crunchy: ", account.crunchy.toString());
     // console.log("Smooth: ", account.smooth.toString());
 
-    // assert that the vote for smooth == 1
     assert.ok(
-      account.crunchy.toString() == 0 && account.smooth.toString() == 1
+      account.crunchy.toString() == 1 && account.smooth.toString() == 1
     );
   });
 
