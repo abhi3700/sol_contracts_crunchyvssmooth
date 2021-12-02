@@ -5,7 +5,7 @@ const assert = require('assert');
 const { SystemProgram } = anchor.web3;
 
 describe('crunchy-vs-smooth', () => {
-  // let account: String;
+  let account: String;
 
   // Configure the client to use the local cluster.
   const provider = anchor.Provider.env();
